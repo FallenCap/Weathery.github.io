@@ -1,0 +1,115 @@
+body,
+html {
+  font-family: "Rubik-Regular", sans-serif;
+  background: #1b2223;
+}
+.custom-nav {
+  background: #1b2223;
+}
+.nav-text {
+  font-family: "Rubik-SemiBold", sans-serif !important;
+  color: #f4fefd !important;
+  font-size: 1.2rem;
+}
+.logo {
+  font-family: "Unbounded", cursive;
+  font-size: 3rem;
+  color: #f4fefd;
+  transition: color 1s ease-in-out;
+}
+.logo:hover {
+  color: #0ef6cc;
+  transition: color 1s ease-in-out;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2d2d2d;
+  background-color: #f4fefd;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 6px 6px 12px #1b2223, -6px -6px 12px #080a0a;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:hover {
+  box-shadow: -6px -6px 12px #1b2223, 6px 6px 12px #080a0a;
+}
+
+.btn-1 {
+  color: #2d2d2d;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5rem;
+  background: #f4fefd;
+  border: 1px solid #f4fefd;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #1b2223, -6px -6px 12px #080a0a;
+}
+.btn-1:hover {
+  box-shadow: -6px -6px 12px #1b2223, 6px 6px 12px #080a0a;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.text-1 {
+  font-family: "Montserrat", sans-serif;
+  color: #f4fefd !important;
+}
+.text-2 {
+  font-family: "Montserrat", sans-serif;
+  color: #1b2223 !important;
+}
+.text-3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #1b2223 !important;
+  font-weight: bolder;
+}
+.text-4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #f4fefd !important;
+  font-weight: bolder;
+}
+.text-5 {
+  font-family: "Montserrat", sans-serif;
+  color: #f4fefd !important;
+}
+.text-6 {
+  font-family: " Montserrat ", sans-serif;
+  color: #3a4f50;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 300px;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: none;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #1b2223, -6px -6px 12px #080a0a;
+}
+.card:hover {
+  box-shadow: -6px -6px 12px #1b2223, 6px 6px 12px #080a0a;
+}
+.card-offwhite {
+  background: #f4fefd;
+}
+.card-cyan {
+  background: #0ef6cc;
+}
