@@ -6,11 +6,6 @@ html {
 .custom-nav {
   background: #1b2223;
 }
-.nav-text {
-  font-family: "Rubik-SemiBold", sans-serif !important;
-  color: #f4fefd !important;
-  font-size: 1.2rem;
-}
 .logo {
   font-family: "Unbounded", cursive;
   font-size: 3rem;
@@ -88,8 +83,18 @@ html {
   color: #f4fefd !important;
 }
 .text-6 {
-  font-family: " Montserrat ", sans-serif;
   color: #3a4f50;
+  font-family: "Unbounded", cursive;
+}
+.text-7 {
+  color: #0ef6cc;
+  font-family: "Unbounded", cursive;
+  font-size: 1.2rem;
+}
+.text-8 {
+  color: #1b2223;
+  font-family: "Unbounded", cursive;
+  font-size: 1.2rem;
 }
 .card {
   position: relative;
@@ -99,7 +104,6 @@ html {
   height: 300px;
   word-wrap: break-word;
   background-clip: border-box;
-  border: none;
   border-radius: 2rem;
   transition: all 0.3s;
   box-shadow: 6px 6px 12px #1b2223, -6px -6px 12px #080a0a;
