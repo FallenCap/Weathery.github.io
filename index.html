@@ -33,7 +33,7 @@
     
     <!-- Search bar -->
     <div class="container mt-5">
-    <div class="col-8">
+    <div class="col-8 col-lg-9 col-md-11 col-sm-12">
       <form class="d-flex" role="search">
         <input id="city"
           class="form-control me-2"
@@ -41,7 +41,7 @@
           type="search"
           aria-label="Search"
         />
-        <div class="ps-5">
+        <div class="pl-5 pl-md-3 pl-sm-2">
           <button class="btn-1" type="submit" id="search">
             Search
           </button>
@@ -55,7 +55,7 @@
     <div class="container mt-6">
       <h2 class="text-1 my-4 text-center">Weather for <span id="cityName"></span></h2>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <div class="col">
+        <div class="col col-sm-12 center">
           <div class="card card-offwhite">
             <div class="py-3">
               <h4 class="my-0 text-3">Temparature</h4>
@@ -63,19 +63,19 @@
             <div class="card-body">
               <h1 class="card-title pricing-card-title text-6"><span id="temp"></span></span><small>°C</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li class="text-2">Minimum Temarature <span id="min_temp" class="text-7"></span><small>°C</small></li>
-                <li class="text-2">Maximum Tempature <span id="max_temp" class="text-7"></span><small>°C</small></li>
+                <li class="text-2">Min Temarature <span id="min_temp" class="text-7"></span><small>°C</small></li>
+                <li class="text-2">Max Tempature <span id="max_temp" class="text-7"></span><small>°C</small></li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-sm-12 center">
           <div class="card mb-4 card-cyan">
             <div class="py-3">
               <h4 class="my-0 text-4">Humidity</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title text-6"><span id="humidity"></span><small>g.kg<sup>-1</sup></small></h1>
+              <h1 class="card-title pricing-card-title text-6"><span id="humidity"></span><small>g/Kg</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li class="text-5">Cloud PCT <span id="cloud_pct" class="text-8"></span><small>µg/L</small></li>
                 <li class="text-5">Feels Like <span id="feels_like" class="text-8"></span><small>°C</small></li>
@@ -83,7 +83,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-sm-12 center">
           <div class="card mb-4">
             <div class="py-3">
               <h4 class="my-0 text-3">Wind</h4>
@@ -91,7 +91,7 @@
             <div class="card-body">
               <h1 class="card-title pricing-card-title text-6"><span id="wind_speed"></span> <small>km/hr</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li class="text-2">Wind Degree <span id="wind_degrees" class="text-7"></span><span class="text-6">°</span></li>
+                <li class="text-2">Wind Degree <span id="wind_degrees" class="text-7"></span><span class="text-10">°</span></li>
                 <li class="text-2">Total Sun time <span id="totalSun" class="text-7"></span><small>hr</small></li>
             </div>
           </div>
@@ -105,99 +105,105 @@
           <thead>
             <tr>
               <th style="width: 34%"></th>
-              <th style="width: 22%;" class="text-1">Cloud_pct </th>
-              <th style="width: 22%;" class="text-1">Feels_like </th>
-              <th style="width: 22%;" class="text-1">Humidity </th>
-              <th style="width: 22%;" class="text-1">Max_temp
-              <th style="width: 22%;" class="text-1">Min_temp </th>
-              <th style="width: 22%;" class="text-1">Sun_time </th>
-              <th style="width: 22%;" class="text-1">Temp </th>
-              <th style="width: 22%;" class="text-1">Wind_degrees </th>
-              <th style="width: 22%;" class="text-1">Wind_speed </th>
+              <th style="width: 22%;" class="text-9">Cloud_pct </th>
+              <th style="width: 22%;" class="text-9">Feels_like </th>
+              <th style="width: 22%;" class="text-9">Humidity </th>
+              <th style="width: 22%;" class="text-9">Max_temp
+              <th style="width: 22%;" class="text-9">Min_temp </th>
+              <th style="width: 22%;" class="text-9">Sun_time </th>
+              <th style="width: 22%;" class="text-9">Temp </th>
+              <th style="width: 22%;" class="text-9">Wind_degrees </th>
+              <th style="width: 22%;" class="text-9">Wind_speed </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row" class="text-start text-1">Shanghai</th>
-              <td class="text-1" id="cloud_pct_San"></td>
-              <td class="text-1" id="feels_like_San"></td>
-              <td class="text-1" id="humidity_San"></td>
-              <td class="text-1" id="max_temp_San"></td>
-              <td class="text-1" id="min_temp_San"></td>
-              <td class="text-1" id="totalSun_San"></td>
-              <td class="text-1" id="temp_San"></td>
-              <td class="text-1" id="wind_degrees_San"></td>
-              <td class="text-1" id="wind_speed_San"></td>
+              <th scope="row" class="text-start text-9">Shanghai</th>
+              <td class="text-9" id="cloud_pct_San"></td>
+              <td class="text-9" id="feels_like_San"></td>
+              <td class="text-9" id="humidity_San"></td>
+              <td class="text-9" id="max_temp_San"></td>
+              <td class="text-9" id="min_temp_San"></td>
+              <td class="text-9" id="totalSun_San"></td>
+              <td class="text-9" id="temp_San"></td>
+              <td class="text-9" id="wind_degrees_San"></td>
+              <td class="text-9" id="wind_speed_San"></td>
             </tr>
             <tr>
-              <th scope="row" class="text-start text-1">New York</th>
-              <td class="text-1" id="cloud_pct_New"></td>
-              <td class="text-1" id="feels_like_New"></td>
-              <td class="text-1" id="humidity_New"></td>
-              <td class="text-1" id="max_temp_New"></td>
-              <td class="text-1" id="min_temp_New"></td>
-              <td class="text-1" id="totalSun_New"></td>
-              <td class="text-1" id="temp_New"></td>
-              <td class="text-1" id="wind_degrees_New"></td>
-              <td class="text-1" id="wind_speed_New"></td>
+              <th scope="row" class="text-start text-9">New York</th>
+              <td class="text-9" id="cloud_pct_New"></td>
+              <td class="text-9" id="feels_like_New"></td>
+              <td class="text-9" id="humidity_New"></td>
+              <td class="text-9" id="max_temp_New"></td>
+              <td class="text-9" id="min_temp_New"></td>
+              <td class="text-9" id="totalSun_New"></td>
+              <td class="text-9" id="temp_New"></td>
+              <td class="text-9" id="wind_degrees_New"></td>
+              <td class="text-9" id="wind_speed_New"></td>
             </tr>
           </tbody>
   
           <tbody>
             <tr>
-              <th scope="row" class="text-start text-1">Delhi</th>
-              <td class="text-1" id="cloud_pct_Del"></td>
-              <td class="text-1" id="feels_like_Del"></td>
-              <td class="text-1" id="humidity_Del"></td>
-              <td class="text-1" id="max_temp_Del"></td>
-              <td class="text-1" id="min_temp_Del"></td>
-              <td class="text-1" id="totalSun_Del"></td>
-              <td class="text-1" id="temp_Del"></td>
-              <td class="text-1" id="wind_degrees_Del"></td>
-              <td class="text-1" id="wind_speed_Del"></td>
+              <th scope="row" class="text-start text-9">Delhi</th>
+              <td class="text-9" id="cloud_pct_Del"></td>
+              <td class="text-9" id="feels_like_Del"></td>
+              <td class="text-9" id="humidity_Del"></td>
+              <td class="text-9" id="max_temp_Del"></td>
+              <td class="text-9" id="min_temp_Del"></td>
+              <td class="text-9" id="totalSun_Del"></td>
+              <td class="text-9" id="temp_Del"></td>
+              <td class="text-9" id="wind_degrees_Del"></td>
+              <td class="text-9" id="wind_speed_Del"></td>
             </tr>
             <tr>
-              <th scope="row" class="text-start text-1">Mumbai</th>
-              <td class="text-1" id="cloud_pct_Mum"></td>
-              <td class="text-1" id="feels_like_Mum"></td>
-              <td class="text-1" id="humidity_Mum"></td>
-              <td class="text-1" id="max_temp_Mum"></td>
-              <td class="text-1" id="min_temp_Mum"></td>
-              <td class="text-1" id="totalSun_Mum"></td>
-              <td class="text-1" id="temp_Mum"></td>
-              <td class="text-1" id="wind_degrees_Mum"></td>
-              <td class="text-1" id="wind_speed_Mum"></td>
+              <th scope="row" class="text-start text-9">Mumbai</th>
+              <td class="text-9" id="cloud_pct_Mum"></td>
+              <td class="text-9" id="feels_like_Mum"></td>
+              <td class="text-9" id="humidity_Mum"></td>
+              <td class="text-9" id="max_temp_Mum"></td>
+              <td class="text-9" id="min_temp_Mum"></td>
+              <td class="text-9" id="totalSun_Mum"></td>
+              <td class="text-9" id="temp_Mum"></td>
+              <td class="text-9" id="wind_degrees_Mum"></td>
+              <td class="text-9" id="wind_speed_Mum"></td>
             </tr>
             <tr>
-              <th scope="row" class="text-start text-1">Moscow</th>
-              <td class="text-1" id="cloud_pct_M0s"></td>
-              <td class="text-1" id="feels_like_M0s"></td>
-              <td class="text-1" id="humidity_M0s"></td>
-              <td class="text-1" id="max_temp_M0s"></td>
-              <td class="text-1" id="min_temp_M0s"></td>
-              <td class="text-1" id="totalSun_M0s"></td>
-              <td class="text-1" id="temp_M0s"></td>
-              <td class="text-1" id="wind_degrees_M0s"></td>
-              <td class="text-1" id="wind_speed_M0s"></td>
+              <th scope="row" class="text-start text-9">Moscow</th>
+              <td class="text-9" id="cloud_pct_Mos"></td>
+              <td class="text-9" id="feels_like_Mos"></td>
+              <td class="text-9" id="humidity_Mos"></td>
+              <td class="text-9" id="max_temp_Mos"></td>
+              <td class="text-9" id="min_temp_Mos"></td>
+              <td class="text-9" id="totalSun_Mos"></td>
+              <td class="text-9" id="temp_Mos"></td>
+              <td class="text-9" id="wind_degrees_Mos"></td>
+              <td class="text-9" id="wind_speed_Mos"></td>
             </tr>
             <tr>
-              <th scope="row" class="text-start text-1">London</th>
-              <td class="text-1" id="cloud_pct_Lon"></td>
-              <td class="text-1" id="feels_like_Lon"></td>
-              <td class="text-1" id="humidity_Lon"></td>
-              <td class="text-1" id="max_temp_Lon"></td>
-              <td class="text-1" id="min_temp_Lon"></td>
-              <td class="text-1" id="totalSun_Lon"></td>
-              <td class="text-1" id="temp_Lon"></td>
-              <td class="text-1" id="wind_degrees_Lon"></td>
-              <td class="text-1" id="wind_speed_Lon"></td>
+              <th scope="row" class="text-start text-9">London</th>
+              <td class="text-9" id="cloud_pct_Lon"></td>
+              <td class="text-9" id="feels_like_Lon"></td>
+              <td class="text-9" id="humidity_Lon"></td>
+              <td class="text-9" id="max_temp_Lon"></td>
+              <td class="text-9" id="min_temp_Lon"></td>
+              <td class="text-9" id="totalSun_Lon"></td>
+              <td class="text-9" id="temp_Lon"></td>
+              <td class="text-9" id="wind_degrees_Lon"></td>
+              <td class="text-9" id="wind_speed_Lon"></td>
             </tr>
           </tbody>
         </table>
       </div>
+     </div>
 
-      
-    </div>
+     <footer>
+      <div class="col-12">
+        <p class="text-5 text-center pt-5" >
+          Made with love ❤ by Subham Saha.
+        </p>
+      </div>
+     </footer>
 
 
     <!-- Scripts -->
