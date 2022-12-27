@@ -222,7 +222,15 @@ html {
   }
 }
 @media (max-width: 360px) {
-  .mb-xs-4 {
-    margin-bottom: 1.5rem;
+  .col-xs-12 {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+  .card {
+    width: 70%;
+    display: flex;
+  }
+  .text-1 {
+    font-size: 1.8rem;
   }
 }
