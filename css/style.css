@@ -221,3 +221,8 @@ html {
     justify-content: center;
   }
 }
+@media (max-width: 360px) {
+  .mb-xs-4 {
+    margin-bottom: 1.5rem;
+  }
+}
