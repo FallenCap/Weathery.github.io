@@ -221,7 +221,7 @@ html {
     justify-content: center;
   }
 }
-@media (max-width: 360px) {
+@media (width < 576px) {
   .col-xs-12 {
     flex: 0 0 auto !important;
     width: 100% !important;
